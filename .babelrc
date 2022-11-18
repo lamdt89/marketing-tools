@@ -1,0 +1,18 @@
+{
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-proposal-throw-expressions",
+    "@babel/plugin-transform-modules-commonjs",
+    "@babel/plugin-syntax-dynamic-import",
+    "babel-plugin-root-import",
+    [
+      "@babel/plugin-proposal-object-rest-spread",
+      {
+        "useBuiltIns": true
+      }
+    ],["@babel/plugin-proposal-class-properties", { "loose": true }]
+  ]
+}

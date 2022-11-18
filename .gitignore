@@ -1,0 +1,11 @@
+/node_modules/
+*.css
+/.env
+/.env.production
+/.dist/
+/.idea/
+/webpack/production.js
+/webpack/development.js
+/webpack/keyfile.json
+.eslintcache
+/public/dist/

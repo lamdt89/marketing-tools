@@ -1,0 +1,42 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "extends": ["eslint:recommended", "plugin:prettier/recommended", "prettier"],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": ["prettier"],
+    "rules": {
+        "camelcase": [0],
+        "class-methods-use-this": [0],
+        "no-case-declarations": [1],
+        "no-multiple-empty-lines": [2, { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
+        "no-param-reassign": [1],
+        "no-undef": [0],
+        "no-underscore-dangle": [0, "always"],
+        "no-use-before-define": [2, { "functions": false }],
+        "no-return-assign": [0],
+        "no-shadow": [1],
+        "prefer-const": 1,
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 100,
+                "singleQuote": true,
+                "jsxSingleQuote": true,
+                "semi": false,
+                "endOfLine": "auto"
+            }
+        ],
+        "semi": [0, "never"]
+    }
+}
